@@ -271,6 +271,7 @@ static const char ObserverDeallocKVOKey;
         objc_setAssociatedObject(observer, &ObserverDeallocKVOKey, observerContainer, OBJC_ASSOCIATION_RETAIN);
         [observerContainer release];
     }else{
+        [observerContainer setWhichObject:self];
         [observerContainer addObserver:item];
     }
     
