@@ -363,7 +363,7 @@ static const char ObserverDeallocKVOKey;
     JJObserverContainer* observerContainer = objc_getAssociatedObject(self, &ObserverDeallocKVOKey);
     
     if (objectContainer) {
-        [objectContainer cleanObserverData];
+//        [objectContainer cleanObserverData];
         [objectContainer cleanKVOData];
     }else if(observerContainer){
         [observerContainer cleanObservers];
