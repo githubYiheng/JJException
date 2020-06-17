@@ -65,41 +65,73 @@
             filePath = "JJException/Source/MRC/NSObject+KVOCrash.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
             landmarkName = "-cleanObservers"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B9031A50-FF10-44A6-B9D6-CD630094540E - 5bd989781ba2d85c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JJObserverContainer cleanObservers]"
+                  moduleName = "JJException"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jezz/git_project/JJExceptionGithub/JJException/Source/MRC/NSObject+KVOCrash.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "219"
+                  endingLineNumber = "219"
+                  offsetFromSymbolStart = "825">
+               </Location>
+               <Location
+                  uuid = "B9031A50-FF10-44A6-B9D6-CD630094540E - 5bd989781ba2d85c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[JJObserverContainer cleanObservers]"
+                  moduleName = "JJException"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jezz/git_project/JJExceptionGithub/JJException/Source/MRC/NSObject+KVOCrash.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "219"
+                  endingLineNumber = "219"
+                  offsetFromSymbolStart = "834">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "16A772BB-E413-4603-844C-3EFE3A8A600F"
+            uuid = "CDB35815-60DB-42AF-B21E-F85F5D3864F4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JJException/Source/MRC/NSObject+KVOCrash.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
-            landmarkName = "-hookAddObserver:forKeyPath:options:context:"
+            startingLineNumber = "367"
+            endingLineNumber = "367"
+            landmarkName = "-jj_cleanKVO"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "92DA4C80-783F-4DDC-AA42-84D3C8829FB3"
+            uuid = "F4FDF05C-7218-42AA-B0EF-87D4330E0EB2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JJException/Source/MRC/NSObject+KVOCrash.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "-cleanKVOData"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "-cleanObservers"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

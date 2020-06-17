@@ -102,8 +102,18 @@ static const char ObserverDeallocKVOKey;
     if (item) {
         dispatch_semaphore_wait(self.kvoLock, DISPATCH_TIME_FOREVER);
         [self.kvoObjectSet removeObject:item];
+        if (self.kvoObjectSet.count == 0) {
+            self.whichObject = nil;
+        }
         dispatch_semaphore_signal(self.kvoLock);
     }
+}
+
+- (void)removeAllKVO {
+    dispatch_semaphore_wait(self.kvoLock, DISPATCH_TIME_FOREVER);
+    [self.kvoObjectSet removeAllObjects];
+    self.whichObject = nil;
+    dispatch_semaphore_signal(self.kvoLock);
 }
 
 - (BOOL)checkKVOItemExist:(KVOObjectItem*)item{
@@ -198,6 +208,8 @@ static const char ObserverDeallocKVOKey;
     for (KVOObjectItem* item in self.observers) {
         @try {
             [item.whichObject removeObserver:item.observer forKeyPath:item.keyPath];
+            KVOObjectContainer* objectContainer = objc_getAssociatedObject(item.whichObject, &DeallocKVOKey);
+            [objectContainer removeKVOObjectItem:item];
         }@catch (NSException *exception) {
         }
     }
@@ -245,6 +257,8 @@ static const char ObserverDeallocKVOKey;
         [objectContainer setWhichObject:self];
         objc_setAssociatedObject(self, &DeallocKVOKey, objectContainer, OBJC_ASSOCIATION_RETAIN);
         [objectContainer release];
+    } else {
+        [objectContainer setWhichObject:self];
     }
 
     if (![objectContainer checkKVOItemExist:item]) {
