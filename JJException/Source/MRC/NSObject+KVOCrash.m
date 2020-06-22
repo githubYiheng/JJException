@@ -37,7 +37,7 @@ static const char ObserverDeallocKVOKey;
 @implementation KVOObjectItem
 
 - (BOOL)isEqual:(KVOObjectItem*)object{
-    if ([self.observer isEqual:object.observer] && [self.keyPath isEqualToString:object.keyPath]) {
+    if ([self.observer isEqual:object.observer] && [self.keyPath isEqualToString:object.keyPath] && [self.whichObject isEqual:object.whichObject]) {
         return YES;
     }
     return NO;
@@ -317,6 +317,7 @@ static const char ObserverDeallocKVOKey;
     KVOObjectItem* item = [[KVOObjectItem alloc] init];
     item.observer = observer;
     item.keyPath = keyPath;
+    item.whichObject = self;
 
     if ([objectContainer checkKVOItemExist:item]) {
         @try {
