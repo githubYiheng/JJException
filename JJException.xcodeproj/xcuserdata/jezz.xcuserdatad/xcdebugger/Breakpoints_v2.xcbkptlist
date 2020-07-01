@@ -42,38 +42,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C74213A2-C0D5-43B6-B6FB-0A80BBBE49E7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JJException/Source/MRC/NSObject+KVOCrash.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "-removeKVOObjectItem:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F22987EB-598F-40F5-AE01-E44E0D69D5DB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JJException/PushViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-dealloc"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "686135FF-BE97-41C9-9404-E7D8D4CACAE7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -90,32 +58,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "63FA0E63-8BC1-4AA8-A591-A30D3A061AE5"
+            uuid = "8EA828E3-9506-491D-95EF-98BD229880B1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JJException/Source/MRC/NSObject+KVOCrash.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
-            landmarkName = "-cleanObservers"
+            startingLineNumber = "330"
+            endingLineNumber = "330"
+            landmarkName = "-hookRemoveObserver:forKeyPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C6D53C93-CE8A-4ECE-BA96-438B233C52BD"
+            uuid = "667A6F53-2E1F-4527-B3CF-A3F74193F652"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JJException/Source/MRC/NSObject+KVOCrash.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
-            landmarkName = "-hookRemoveObserver:forKeyPath:"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "-cleanKVOData"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
